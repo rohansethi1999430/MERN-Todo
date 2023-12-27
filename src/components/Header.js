@@ -1,8 +1,11 @@
 import React from 'react'
+import './Header.css';
 
 function Header() {
   return (
-    <h1>MERN Todo</h1>
+    <div className='header'>
+      <h1>MERN Todo</h1>
+    </div>
   )
 }
 
