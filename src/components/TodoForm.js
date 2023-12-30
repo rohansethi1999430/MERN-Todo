@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './TodoForm.css';
-
 function TodoForm() {
+    const [text,setText] = useState("");
+
     const onFormSubmit = () =>{
 
     }
 
    const onInputChange = (e) =>{
-    console.log(e);
+     setText(e.target.value);
     }
   return (
     <div className='form'>
